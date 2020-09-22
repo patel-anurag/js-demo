@@ -1,0 +1,154 @@
+body {
+    background: black;
+    font-weight: bold;
+	background: linear-gradient(60deg, #ffffff, #000000, #ee7752, #e73c7e, #000000, #23a6d5, #23d5ab);
+	background-size: 200% 200%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	/*25% {
+		background-position: 50% 100%;
+	}*/
+	50% {
+		background-position: 100% 50%;
+	}
+	75% {
+		background-position: 50% 0%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+
+}
+
+div.container {
+    border: 0px;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+#header-nav {
+    background-color: gray;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: right;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid black;
+}
+
+li>hr {
+    margin: 0px;
+}
+
+#nav-list a {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8em;
+  padding: 10px 0px 0px;
+}
+
+#nav-list a:hover {
+  text-decoration: none;
+}
+
+ul#nav-list {
+    list-style-type: none;
+    text-align: center;    
+}
+
+div#heading {
+    color: white;
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    /* Header */  
+    #collapsable-nav a { /* Collapsed nav menu text */
+      font-size: 1.8em;
+      font-weight: normal;
+    }
+}  
+    /* End Header */
+
+section {
+    background-color: gray;
+    margin: 10px;
+}
+
+section.zoom {
+    transition: transform .4s;
+}
+
+section.zoom:hover {
+    background-color: rgba(51, 51, 51, 0.5);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+}
+
+section>h3 {
+    position: relative;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    height: 45px;
+    padding: 10px 20px ;
+}
+
+section>p>span {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 115%;
+}
+
+section>p {
+    clear: both;
+    padding: 10px;
+    border: none;
+/*    height: 700px;    */
+}
+
+section.transparent {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: snow;
+}
+
+.row {
+    width: 100%;
+}
+
+section>a.source {
+    float: right;
+    clear: left;
+    color: seashell;
+}
